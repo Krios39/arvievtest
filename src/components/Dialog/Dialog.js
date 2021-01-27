@@ -73,7 +73,6 @@ export default function DIalog({dialogOpen, setDialogOpen, addEvent,changedEvent
                 <FormControl className="form">
                     <InputLabel>Нзвание события</InputLabel>
                     <Input value={eventTitle} onChange={(event) => setEventTitle(event.target.value)}/>
-                    <FormHelperText>ааа</FormHelperText>
                 </FormControl>
                 <FormControl className="form">
                     <InputLabel>Тип события</InputLabel>
@@ -88,7 +87,6 @@ export default function DIalog({dialogOpen, setDialogOpen, addEvent,changedEvent
                     <FormControl className="form">
                         <InputLabel>Сумма</InputLabel>
                         <Input type="number" value={summ} onChange={(event => setSumm(event.target.value))}/>
-                        <FormHelperText>ааа</FormHelperText>
                     </FormControl>
                 }
                 {
@@ -97,12 +95,10 @@ export default function DIalog({dialogOpen, setDialogOpen, addEvent,changedEvent
                         <FormControl className="form">
                             <InputLabel>Куда идти</InputLabel>
                             <Input value={address} onChange={(event) => setAddress(event.target.value)}/>
-                            <FormHelperText>ааа</FormHelperText>
                         </FormControl>
                         <FormControl className="form">
                             <Typography>Во сколько</Typography>
                             <Input className="select" type="time" value={time} onChange={(event) => setTime(event.target.value)}/>
-                            <FormHelperText>ааа</FormHelperText>
                         </FormControl>
                     </Box>
                 }
@@ -111,7 +107,6 @@ export default function DIalog({dialogOpen, setDialogOpen, addEvent,changedEvent
                     <FormControl className="form">
                         <InputLabel>Заметка</InputLabel>
                         <Input value={other} onChange={(event) => setOther(event.target.value)}/>
-                        <FormHelperText>ааа</FormHelperText>
                     </FormControl>
                 }
             </DialogContent>
