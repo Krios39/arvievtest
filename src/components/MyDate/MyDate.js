@@ -3,6 +3,7 @@ import {Button, Input} from "@material-ui/core";
 import Calendar from 'react-calendar';
 import Box from "@material-ui/core/Box";
 import "./MuDate.css"
+import DatePicker from "react-date-picker";
 
 
 export default function MyDate({dialogOpen, date, changeDate}) {
@@ -15,6 +16,9 @@ export default function MyDate({dialogOpen, date, changeDate}) {
     return (
         <Box>
             <Input className="input" readOnly value={inputDate}/>
+            {
+                false && <DatePicker  value={date} onChange={changeDate}/>
+            }
             <Calendar value={date} onChange={changeDate}/>
             <Button on className="button" onClick={() => dialogOpen(true)}>Добавить</Button>
         </Box>
