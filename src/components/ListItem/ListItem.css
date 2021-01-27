@@ -1,0 +1,36 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    min-width: 300px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+}
+
+.listItem{
+    height:20px;
+    margin:5px
+}
+.listItem1{
+    margin:5px
+}
+
+.listTitle{
+    height:20px;
+    margin:5px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.titleBox{
+    margin:5px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonBox{
+    display:flex;
+    flex-direction: row;
+}
